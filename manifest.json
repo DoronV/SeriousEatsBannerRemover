@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "SeriousEatsBannerRemover",
+  "version": "1.0",
+
+  "description": "Removes the cookie banner from the Serious Eats site",
+
+  "icons": {
+    "48": "icons/banner-remover-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.seriouseats.com/*"],
+      "js": ["remove.js"]
+    }
+  ]
+}
